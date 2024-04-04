@@ -17,7 +17,11 @@
   <li>Bcrypt</li>
   <li>Cors</li>
 </ul>
-
+<p>A API em si valida se o usuário mandou uma senha com mais de 9 carácteres sem repetição de caractere, se tentar salvar uma senha com menos de 9 digitos a API manda status code 400.<br>
+Caso satisfaça a condição a senha é persistida no mongoDB via conexão em CLOUD (Atlas).<br>
+Se mandar senha vazia a API da 400, se tentar mandar email já persistido ela da status 401.<br>
+O request tem 2 campos para persistir em Database, campo email e campo password.
+</p>
 
 
 
