@@ -24,6 +24,7 @@ Caso satisfaça a condição a senha é persistida no mongoDB via conexão em CL
 Se mandar senha vazia a API da 400, se tentar mandar email já persistido ela da status 401.<br>
 O request tem 2 campos para persistir em Database, campo email e campo password.
 </p>
+<p>Como só tem um método POST, inseri o JWT passando a hash em cima do Id de usuário do banco de dados, quando o status é 201(created) o JWT esta vindo no response desse POST.</p>
 
 
 
